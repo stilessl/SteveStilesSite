@@ -1,0 +1,598 @@
+/*
+Personal Portfolio Stylesheet (Hi Potential Employers! Snoop around all you like :D)
+Author: Steve Stiles
+Contact Email: stilessl@gmail.com
+*/
+
+
+/*********************************************************************************************************
+**********************************************************************************************************
+***
+***  RESET STYLES
+***
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+/*==========================================================================
+	BOX MODEL SWITCH
+==========================================================================*/
+	 
+*, *:before, *:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *behavior:url(/js/polyfills/boxsizing.htc);}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*********************************************************************************************************
+**********************************************************************************************************
+***
+***  BASE STYLES (MOBILE FIRST)
+***
+**********************************************************************************************************
+*********************************************************************************************************/
+
+/*==========================================================================
+	GENERAL STYLES
+==========================================================================*/
+
+html {height: 100%; overflow-y: scroll; }
+body {font-family:'proxima-nova', Helvetica, Arial, sans-serif; color:#fff;-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+body#home {background: #fff;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	background-size: cover;
+}
+
+a {color:#00649d; text-decoration: none;}
+em {font-style: italic;}
+strong {font-weight: 700;}
+
+.inner-wrapper {margin: 0 auto; max-width: 68.75em; width: 93.75%;}
+
+
+/* ------------ POPUP NAV -------------- */
+
+.popup-nav {position:fixed; background-color: #59c3ff; width: 100%; top: 0; z-index: 50; padding: 1.2em; opacity: 0;
+
+	 -webkit-transition: opacity .4s ease; 
+	 -moz-transition: opacity .4s ease; 
+	 -o-transition: opacity .4s ease; 
+	transition: opacity .4s ease;
+
+
+
+}
+.popup-nav .branding {float: left;}
+.popup-nav .branding p {font-size: 1em; font-weight: bold; float: left; padding: .25em 0 0 1em;}
+.popup-nav .branding img {width: 1.5em; float: left;}
+
+.popup-nav .global-nav {float: right;}
+.popup-nav .global-nav li {float:left; margin:.25em .625em 0 .625em; font-weight: bold;}
+
+
+.popup-nav a {color:#fff;}
+.popup-nav a:hover {color: #c0e8ff;}
+
+/* ------------ ABOUT ME -------------- */
+
+.about-me {background-color:#51c0ff; background-attachment: fixed; background-image: url("/images/parrallax.jpg"); position: relative;}
+.about-me:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #5ac3fd; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
+.about-me .inner-wrapper {text-align: center; padding:3.5em 0;}
+
+
+
+
+.about-me .inner-wrapper img {width:100%; max-width: 196px; margin-bottom: 3%;
+	animation: bounceInDown 1s ease;
+}
+
+@-webkit-keyframes bounceInDown {
+	from, 60%, 75%, 90%, to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -3000px, 0);
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0);
+	}
+
+	to {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes bounceInDown {
+	from, 60%, 75%, 90%, to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -3000px, 0);
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0);
+	}
+
+	to {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+
+.about-me .inner-wrapper h1 {font-size:1.5em; margin-bottom: .2em;}
+.about-me .inner-wrapper h2 {font-size:1em; line-height: 1.3em;}
+.button {
+
+color: #fff;
+font-size: .9em;
+padding: 12px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border: 1px solid #fff;
+display: inline-block;
+
+}
+.button:hover {background: #3bb8ff;}
+.button:active {background: #17a2f1;}
+.about-me .inner-wrapper .about-me-buttons {padding-top: 1.2em;}
+
+
+.about-me .inner-wrapper h1, .about-me .inner-wrapper h2, .about-me .inner-wrapper .about-me-buttons {opacity:0;
+	animation: fadeIn 1s ease;
+	animation-delay: 0.5s;
+	animation-fill-mode:both;
+	-webkit-animation-fill-mode:both;
+
+}
+
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+/* ------------ WORK -------------- */
+
+
+.work {
+	position: relative;
+	background-color: #F4F5F7;
+
+}
+
+.work:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #F4F5F7; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
+
+
+.work .inner-wrapper {padding:3.5em 0;}
+
+.work .inner-wrapper .work-list li {margin-bottom: 2em; position: relative; display: block;}
+.work .inner-wrapper img {z-index:1; width: 100%; display: block;}
+
+
+.work-description {
+	background: #000;
+	color: #fff;
+	padding: 1.25rem;
+}
+
+.work-description h3 {
+	font-size: 1rem;
+}
+
+.work-description h3 a {
+	color: #fff;
+}
+
+.work-description h3 a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.work-description p {
+	font-size: 0.75rem;
+	padding-top: .5em; 
+	color: #B1B4BD;
+}
+
+.overlay-svg {
+	position: absolute; 
+	left: -999em; 
+	top: -999em;
+}
+
+
+.work__thumb {
+	position: relative;
+}
+
+.work__thumb a {
+	display: block;
+}
+.work__thumb a:before {
+	transition: opacity 0.25s ease;
+	opacity: 0;
+	left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    content: "";
+    position: absolute;
+}
+
+.work__thumb a:hover:before {
+    opacity: 1;
+}
+
+.overlay-svg {
+	transition: opacity 0.25s ease;
+	opacity: 0;
+}
+
+.work__thumb a:hover .overlay-svg {
+	position: absolute; 
+	width: 2rem;
+	display: block;
+	z-index: 2;
+	fill: white;
+	opacity: 1;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.work-feature {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+	.code-examples {
+		background: #E5E7EB;
+		padding: 1.25rem;
+	}
+	.code-examples h3 {
+		font-size: 0.875rem;
+		color: #000;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.code-examples__list-item {
+		color: #000;
+		margin-top: 0.5rem;
+		font-size: 0.875rem;
+	}
+
+	.code-examples__list-item a {
+		color: #696d70;
+		transition: all 0.25s ease;
+	}
+
+	.code-examples__master-list-item + .code-examples__master-list-item {
+		margin-top: 1.25rem;
+		padding-top: 1.25rem;
+		border-top: 1px solid #d3d3d4;
+	}
+
+/* ------------ ABOUT ---------------- */
+
+
+
+.about {position: relative;}
+.about:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #ff704a; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
+
+
+.about {background-color: #ff704a;}
+
+.about .inner-wrapper {padding: 3.5em 1.5em; text-align: left;}
+.about .inner-wrapper h2 {font-size: 1.3em; color:#fff;}
+.about .inner-wrapper h3 {font-weight: bold; color:#613208;}
+
+.about .inner-wrapper h2 {font-size: 1.2em; line-height: 1.6em; margin-bottom: 2em;}
+.about .inner-wrapper h3 {font-size: 1em; margin-bottom: .5em;}
+.about .inner-wrapper p {margin-bottom:1.8em; font-size: 1em; line-height: 1.4em;}
+
+
+/* ------------ CONTACT -------------- */
+
+.contact {background-color:#3c434b; text-align: center;}
+.contact .button {width: 100%; max-width: 31.25em; border: 1px solid #71ccff; color: #71ccff;}
+.contact .inner-wrapper {padding:3.5em 0;}
+.contact .button:hover {background: #373e45}
+.contact .button:active {background: #333940;}
+
+.contact .inner-wrapper {overflow: hidden;}
+.contact .inner-wrapper h2 {font-size:1.5em; color: #71ccff; padding-bottom: 1.2em;}
+
+
+.contact .inner-wrapper .social {margin-top: 1.5em;}
+.contact .inner-wrapper .social img {width: 3.1em; margin: 0 .2em;}
+.contact .inner-wrapper .social img:hover {position: relative; top: -5px;}
+
+/* ------------ COPYRIGHT -------------- */
+
+.copyright {background-color: #373e45; text-align: center; padding: 5em 5em 5em 5em;}
+.copyright p {font-size: .9em; margin-bottom: .6em; color: #71CCFF;line-height:}
+
+
+/* ------------ Back to top -------------- */
+
+.back-to-top { position: fixed; bottom: 0; right: 0; padding: .725em; z-index: 20; opacity:0;
+
+	 -webkit-transition: opacity .5s ease; 
+	 -moz-transition: opacity .5s ease; 
+	 -o-transition: opacity .5s ease; 
+	transition: opacity .5s ease;
+
+}
+.back-to-top img {width: 3em; opacity:0.35; filter:alpha(opacity=40); /* For IE8 and earlier */}
+.back-to-top img:hover {opacity:.80; filter:alpha(opacity=80); /* For IE8 and earlier */}
+.back-to-top.is-revealed {opacity:1;}
+
+.flag {
+	background: #c20404;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	padding: 0.25rem;
+	vertical-align: middle;
+	margin-left: 0.25rem;
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+***
+***  MEDIA QUERIES (LIKELY SMALL-TABLET)
+***  536px viewports and up (33.5em x 16px)
+***
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+@media only screen and (min-width:33.5em) {
+
+/* ------------ POPUP NAV -------------- */
+
+.popup-nav.is-revealed {opacity:1;}
+
+
+/* ------------ ABOUT ME -------------- */
+
+.about-me .button {margin:2px;}
+.about-me .inner-wrapper h1 {font-size:2.2em; color: #fff; font-weight:bold;}
+.about-me .inner-wrapper h2 {font-size:1.1em; color: #fff;}
+
+.button {font-size: 1em; padding: 15px;}
+.about-me .inner-wrapper .about-me-buttons {padding-top: 1.6em;}
+
+/* ------------ WORK -------------- */
+
+.work-list li:nth-child(odd) {
+	margin-right:3.818182%;
+}
+
+.work-list li {
+	width: 48.090909%;
+}
+
+.work-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ------------ ABOUT ---------------- */
+
+.about .inner-wrapper {padding: 5em 1.5em;}
+
+
+/* ------------ CONTACT -------------- */
+
+.contact .inner-wrapper {padding:5em 0;}
+
+
+
+
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+***
+***  MEDIA QUERIES (LIKELY TABLET)
+***  699.2px viewports and up (43.7em x 16px)
+***
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+@media only screen and (min-width:43.7em) {
+
+.about-me .inner-wrapper h1 {font-size:2.7em; color: #fff;}
+.about-me .inner-wrapper h2 {font-size:1.2em; color: #fff;}
+
+/* ------------ ABOUT ---------------- */
+
+.about .inner-wrapper h2 {font-size: 1.6em; line-height: 1.6em; margin-bottom: 2em;}
+.about .inner-wrapper h3 {font-size: 1.2em; margin-bottom: .5em;}
+.about .inner-wrapper p {margin-bottom:1.8em; font-size: 1.2em;}
+
+.contact .inner-wrapper .social {margin-top: 2.2em;}
+.contact .inner-wrapper .social img {width: 4em; margin: 0 .2em;}
+
+
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+***
+***  MEDIA QUERIES (LIKELY DESKTOP)
+***  984px viewports and up (61.5em x 16px)
+***
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+@media only screen and (min-width:61.5em) {
+
+.about-me .inner-wrapper {padding:7em 0;}
+.about-me .inner-wrapper h1 {font-size:3.6em;}
+.about-me .inner-wrapper h2 {font-size:1.5em;}
+.button {font-size: 1.2em; padding: 18px;}
+.about-me .inner-wrapper .about-me-buttons {padding-top: 2em;}
+
+/* ------------ WORK -------------- */
+
+.work-description h3 {font-size: 1.25em;}
+
+
+/* ------------ ABOUT ---------------- */
+
+.about .inner-wrapper {padding: 5.5em 10em;}
+.about .inner-wrapper h2 {font-size: 1.8em; line-height: 1.6em; margin-bottom: 2em;}
+.about .inner-wrapper h3 {font-size: 1.5em; margin-bottom: .5em;}
+.about .inner-wrapper p {margin-bottom:1.8em; font-size: 1.2em;}
+.about .inner-wrapper section {overflow: hidden;}
+.about .inner-wrapper .first {width:47%; float: left;}
+.about .inner-wrapper .last {width:47%; float: right;}
+
+
+/* ------------ CONTACT -------------- */
+
+.contact .inner-wrapper {padding:7em 0;}
+.contact .inner-wrapper h2 {font-size:2.2em; padding-bottom: 1.2em;}
+
+.contact .inner-wrapper .social {margin-top: 3em;}
+.contact .inner-wrapper .social img {width: 6.3em; margin: 0 .6em;}
+	
+	.code-example {
+		padding: 1.875rem;
+	}
+
+	.code-examples__list {
+		margin-top: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.code-examples__list-item {
+		margin-top: 0;
+	}
+
+	.code-examples__list-item a:hover {
+		text-decoration: underline;
+		color: #000;
+	}
+
+	.code-examples__list-item + .code-examples__list-item {
+		padding-left: 0.75rem;
+		margin-left: 0.75rem;
+		border-left: 1px solid #B1B4BD;
+	}
+
+}
+
+
+
