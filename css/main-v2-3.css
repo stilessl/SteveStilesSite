@@ -102,7 +102,7 @@ strong {font-weight: 700;}
 
 /* ------------ POPUP NAV -------------- */
 
-.popup-nav {position:fixed; background-color: #59c3ff; width: 100%; top: 0; z-index: 50; padding: 1.2em; opacity: 0;
+.popup-nav {position:fixed; background-color: #00A4D0; width: 100%; top: 0; z-index: 50; padding: 1.2em; opacity: 0;
 
 	 -webkit-transition: opacity .4s ease; 
 	 -moz-transition: opacity .4s ease; 
@@ -113,11 +113,11 @@ strong {font-weight: 700;}
 
 }
 .popup-nav .branding {float: left;}
-.popup-nav .branding p {font-size: 1em; font-weight: bold; float: left; padding: .25em 0 0 1em;}
+.popup-nav .branding p {font-size: 1em; font-weight: 500; float: left; padding: .25em 0 0 1em;}
 .popup-nav .branding img {width: 1.5em; float: left;}
 
 .popup-nav .global-nav {float: right;}
-.popup-nav .global-nav li {float:left; margin:.25em .625em 0 .625em; font-weight: bold;}
+.popup-nav .global-nav li {float:left; margin:.25em .625em 0 .625em; font-weight: 500;}
 
 
 .popup-nav a {color:#fff;}
@@ -125,8 +125,18 @@ strong {font-weight: 700;}
 
 /* ------------ ABOUT ME -------------- */
 
-.about-me {background-color:#51c0ff; background-attachment: fixed; background-image: url("/images/parrallax.jpg"); position: relative;}
-.about-me:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #5ac3fd; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
+.about-me {
+
+  background: url("/images/parrallax-02.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+
+  background-color:#202431; background-attachment: fixed; position: relative;}
+.about-me:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #1F2330; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
 .about-me .inner-wrapper {text-align: center; padding:3.5em 0;}
 
 
@@ -204,25 +214,35 @@ strong {font-weight: 700;}
 	}
 }
 
+.h2-list {
+	margin:0;
+	margin-bottom: 4rem;
+}
 
-.about-me .inner-wrapper h1 {font-size:1.5em; margin-bottom: .2em;}
+.about .inner-wrapper .h2-list h2 {
+	margin-bottom: 0;
+}
+.about-me .inner-wrapper h1 {font-size:1.5em; margin-bottom: .2em; font-weight: bold;}
 .about-me .inner-wrapper h2 {font-size:1em; line-height: 1.3em;}
 .button {
 
 color: #fff;
-font-size: .9em;
-padding: 12px;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-border: 1px solid #fff;
+font-size: 1rem;
+padding: 12px 16px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
 display: inline-block;
+background: #181B28;
 
 }
-.button:hover {background: #3bb8ff;}
-.button:active {background: #17a2f1;}
+.button:hover {background: #00A1CA;}
+.button:active {background: #1F2330;}
 .about-me .inner-wrapper .about-me-buttons {padding-top: 1.2em;}
 
+.button.email-button {
+	background: transparent;
+}
 
 .about-me .inner-wrapper h1, .about-me .inner-wrapper h2, .about-me .inner-wrapper .about-me-buttons {opacity:0;
 	animation: fadeIn 1s ease;
@@ -384,14 +404,14 @@ display: inline-block;
 
 
 .about {position: relative;}
-.about:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #ff704a; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
+.about:after {content: ""; display: block; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #db3a34; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; z-index: 40;}
 
 
-.about {background-color: #ff704a;}
+.about {background-color: #db3a34;}
 
 .about .inner-wrapper {padding: 3.5em 1.5em; text-align: left;}
 .about .inner-wrapper h2 {font-size: 1.3em; color:#fff;}
-.about .inner-wrapper h3 {font-weight: bold; color:#613208;}
+.about .inner-wrapper h3 {font-weight: bold; color:#fff;}
 
 .about .inner-wrapper h2 {font-size: 1.2em; line-height: 1.6em; margin-bottom: 2em;}
 .about .inner-wrapper h3 {font-size: 1em; margin-bottom: .5em;}
@@ -400,14 +420,14 @@ display: inline-block;
 
 /* ------------ CONTACT -------------- */
 
-.contact {background-color:#3c434b; text-align: center;}
-.contact .button {width: 100%; max-width: 31.25em; border: 1px solid #71ccff; color: #71ccff;}
+.contact {background-color:#084C61; text-align: center;}
+.contact .button {width: 100%; max-width: 31.25em; border: 1px solid #fff; color: #fff;}
 .contact .inner-wrapper {padding:3.5em 0;}
-.contact .button:hover {background: #373e45}
-.contact .button:active {background: #333940;}
+.contact .button:hover {background: #134255;}
+.contact .button:active {background: #164E63;}
 
 .contact .inner-wrapper {overflow: hidden;}
-.contact .inner-wrapper h2 {font-size:1.5em; color: #71ccff; padding-bottom: 1.2em;}
+.contact .inner-wrapper h2 {font-size:1.5em; color: #fff; padding-bottom: 1.2em;}
 
 
 .contact .inner-wrapper .social {margin-top: 1.5em;}
@@ -416,8 +436,8 @@ display: inline-block;
 
 /* ------------ COPYRIGHT -------------- */
 
-.copyright {background-color: #373e45; text-align: center; padding: 5em 5em 5em 5em;}
-.copyright p {font-size: .9em; margin-bottom: .6em; color: #71CCFF;line-height:}
+.copyright {background-color: #323031; text-align: center; padding: 5em 5em 5em 5em;}
+.copyright p {font-size: .9em; margin-bottom: .6em; color: #fff;line-height:}
 
 
 /* ------------ Back to top -------------- */
@@ -464,10 +484,10 @@ display: inline-block;
 /* ------------ ABOUT ME -------------- */
 
 .about-me .button {margin:2px;}
-.about-me .inner-wrapper h1 {font-size:2.2em; color: #fff; font-weight:bold;}
-.about-me .inner-wrapper h2 {font-size:1.1em; color: #fff;}
+.about-me .inner-wrapper h1 {font-size:2.2em; color: #fff;}
+.about-me .inner-wrapper h2 {font-size:1.1em;}
 
-.button {font-size: 1em; padding: 15px;}
+.button {padding: 15px;}
 .about-me .inner-wrapper .about-me-buttons {padding-top: 1.6em;}
 
 /* ------------ WORK -------------- */
@@ -512,7 +532,7 @@ display: inline-block;
 @media only screen and (min-width:43.7em) {
 
 .about-me .inner-wrapper h1 {font-size:2.7em; color: #fff;}
-.about-me .inner-wrapper h2 {font-size:1.2em; color: #fff;}
+.about-me .inner-wrapper h2 {font-size:1rem;}
 
 /* ------------ ABOUT ---------------- */
 
@@ -540,8 +560,8 @@ display: inline-block;
 
 .about-me .inner-wrapper {padding:7em 0;}
 .about-me .inner-wrapper h1 {font-size:3.6em;}
-.about-me .inner-wrapper h2 {font-size:1.5em;}
-.button {font-size: 1.2em; padding: 18px;}
+.about-me .inner-wrapper h2 {font-size:1.25rem;}
+.button {padding: 12px 16px;}
 .about-me .inner-wrapper .about-me-buttons {padding-top: 2em;}
 
 /* ------------ WORK -------------- */
