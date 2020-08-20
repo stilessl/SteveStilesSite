@@ -99,7 +99,9 @@ em {font-style: italic;}
 strong {font-weight: 700;}
 
 .inner-wrapper {margin: 0 auto; max-width: 68.75em; width: 93.75%;}
-
+.headshot {
+	border-radius: 100px;
+}
 
 /* ------------ POPUP NAV -------------- */
 
@@ -128,7 +130,7 @@ strong {font-weight: 700;}
 
 .about-me {
 
-  background: url("/images/parrallax-02.png") no-repeat center center fixed; 
+  background: url("/images/parrallax-02.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
