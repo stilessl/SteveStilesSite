@@ -854,4 +854,60 @@
 
 
 
+//SVG Overlay
+
+.overlay-svg {
+	position: absolute; 
+	left: -999em; 
+	top: -999em;
+}
+
+
+.work {
+
+	&__column {
+		position: relative;
+
+		a {
+			display: block;
+		}
+
+		a:before {
+			transition: opacity 0.25s ease;
+			opacity: 0;
+			left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    z-index: 2;
+		    background-color: rgba(0, 0, 0, 0.5);
+		    display: block;
+		    content: "";
+		    position: absolute;
+		}
+
+		a:hover:before {
+			opacity: 1;
+		}
+
+		a:hover .overlay-svg {
+			position: absolute; 
+			width: 2rem;
+			display: block;
+			z-index: 2;
+			fill: white;
+			opacity: 1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);	
+		}
+	}
+}
+
+.overlay-svg {
+	transition: opacity 0.25s ease;
+	opacity: 0;
+}
+
+
 
