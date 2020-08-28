@@ -868,11 +868,11 @@
 	&__column {
 		position: relative;
 
-		a {
+		.artwork-link {
 			display: block;
 		}
 
-		a:before {
+		.artwork-link:before {
 			transition: opacity 0.25s ease;
 			opacity: 0;
 			left: 0;
@@ -886,11 +886,11 @@
 		    position: absolute;
 		}
 
-		a:hover:before {
+		.artwork-link:hover:before {
 			opacity: 1;
 		}
 
-		a:hover .overlay-svg {
+		.artwork-link:hover .overlay-svg {
 			position: absolute; 
 			width: 2rem;
 			display: block;
