@@ -1,3 +1,5 @@
+
+
 .header {
 	position: sticky;
 	left: 0;
@@ -227,6 +229,75 @@
   }
 }
 
+
+@keyframes contactDiamondAnimate {
+  0% {
+	transform: translate(-110%, 25%) rotate(45deg);
+    border-color: $cRiverDark $cRiverDark #322F73 #322F73;
+  }
+
+  16% {
+    border-color: #322F73 #322F73 $cRiverDark $cRiverDark;
+  }
+
+  33% {
+    border-color: $cRiverDark $cRiverDark #322F73 #322F73;
+  }
+
+  50% {
+    border-color: #322F73 #322F73 $cRiverDark $cRiverDark;
+  }
+
+  66% {
+    border-color: $cRiverDark $cRiverDark #322F73 #322F73;
+  }  
+
+  82% {
+    border-color: #322F73 #322F73 $cRiverDark $cRiverDark;
+  }
+
+  100% {
+	transform: translate(-110%, 25%) rotate(45deg);
+    border-color: $cRiverDark $cRiverDark #322F73 #322F73;
+  }
+}
+
+
+@keyframes contactDiamondAnimate2 {
+  0% {
+	transform: translate(10%, 25%) rotate(45deg);
+    border-color: #93C8D9 #93C8D9 $cFountain $cFountain;
+  }
+
+  16% {
+    border-color: $cFountain $cFountain #93C8D9 #93C8D9;
+  }
+
+  33% {
+    border-color: #93C8D9 #93C8D9 $cFountain $cFountain;
+  }
+
+  50% {
+    border-color: $cFountain $cFountain #93C8D9 #93C8D9;
+  }
+
+  66% {
+    border-color: #93C8D9 #93C8D9 $cFountain $cFountain;
+  }  
+
+  82% {
+    border-color: $cFountain $cFountain #93C8D9 #93C8D9;
+  }
+
+  100% {
+	transform: translate(10%, 25%) rotate(45deg);
+    border-color: #93C8D9 #93C8D9 $cFountain $cFountain;
+  }
+}
+
+
+
+
 @keyframes bioDiamondAnimate {
   0% {
 	transform: translate(60%, -50%) rotate(45deg);
@@ -337,6 +408,30 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-220%, -90%) rotate(45deg);
+		z-index: 0;
+	}
+
+
+	&--contact-diamond {
+		border-width: 200px;
+		border-style: solid;
+		animation: 15s ease-in-out 0s infinite contactDiamondAnimate;
+		border-color: $cBlush transparent transparent #C22D40;
+		top: 50%;
+		left: 50%;
+		transform: translate(-110%, 25%) rotate(45deg);
+		z-index: 0;
+	}
+
+
+	&--contact-diamond-2 {
+		border-width: 200px;
+		border-style: solid;
+		animation: 15s ease-in-out 0s infinite contactDiamondAnimate2;
+		border-color: $cBlush transparent transparent #C22D40;
+		top: 50%;
+		left: 50%;
+		transform: translate(10%, 25%) rotate(45deg);
 		z-index: 0;
 	}
 
@@ -631,8 +726,9 @@
 
 .contact {
 	background-color: $cRiver;
-	height:25rem;
+	height:19rem;
 	position: relative;
+	overflow: hidden;
 
 	&__email {
 		position: absolute;
