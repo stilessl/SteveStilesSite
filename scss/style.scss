@@ -380,7 +380,7 @@
 
 
 .about {
-	max-width: 120rem;
+	max-width: 100rem;
 	margin: 0 auto;
 
 	&__row {
@@ -463,7 +463,7 @@
 
 
 .work {
-	max-width: 120rem;
+	max-width: 100rem;
 	margin: 0 auto;
 
 	&__row {
@@ -507,6 +507,15 @@
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
+		}
+	}
+
+
+	&__row--feature {
+		.work__column:first-child {
+			@include at-break($break--medium) {
+				width: 30rem;
+			}
 		}
 	}
 }

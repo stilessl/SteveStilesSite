@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/CNAME",
+		"oF": 0
+		},
 	"/css/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -19,6 +27,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/images/politico-core.jpg": {
+		"ft": 16384,
+		"iS": 205854,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/politico-core.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/pro-dashboard.jpg": {
 		"ft": 16384,
 		"iS": 161039,
@@ -27,18 +46,18 @@
 		"oAP": "/images/pro-dashboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/images/zendnode.png": {
-		"ft": 32768,
-		"iS": 3391439,
+	"/images/zendnode.jpg": {
+		"ft": 16384,
+		"iS": 667813,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/images/zendnode.png",
+		"oAP": "/images/zendnode.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
 	"/index.html": {
