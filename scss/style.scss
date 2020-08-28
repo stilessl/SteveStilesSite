@@ -1,0 +1,531 @@
+.header {
+	position: sticky;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+.nav {
+	&__list {
+		display: flex;
+	}
+	&__list-item {
+		padding: 0.875rem 0.75rem;
+		width: 33.33333%;
+		text-align: center;
+		font-weight: bold;
+		font-size: 0.75rem;
+		letter-spacing: 0.26em;
+		text-transform: uppercase;
+
+		@include at-break($break--medium) {
+			width: 14.2857%;
+		}
+
+		&--work a {
+			color: #fff;
+		}
+
+		&--resume a {
+			color: $cRiver;
+		}
+		
+		&--contact a {
+			color: #fff;
+		}
+	}
+}
+
+
+@keyframes stevestilesAnimate {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+.hero {
+	background-color: $cRiver;
+	width: 100%;
+	height: 20rem;
+	position: relative;
+	overflow: hidden;
+
+	@include at-break($break--small) {
+		height: 33.75rem;
+	}
+
+
+	&__title {
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		animation: 1s ease-in-out 2s 1 stevestilesAnimate;
+		transform: translate(-48%, -50%);
+		font-size: 3.5rem;
+		letter-spacing: -0.2rem;
+		color: #fff;
+		z-index: 100;
+		visibility: hidden;
+  		animation-fill-mode: forwards;
+
+  		@include at-break($break--base) {
+  			font-size: 5rem;
+  		}
+
+
+		@include at-break($break--small) {
+			font-size: 7rem;
+		}
+
+
+		&--accent {
+			color: $cSalmon;
+		}
+
+		sup {
+			font-size: 1rem;
+			top: -2rem;
+			letter-spacing: 0;
+
+			@include at-break($break--base) {
+				top: -3rem;
+			}
+
+			@include at-break($break--small) {
+				top: -4.5rem;
+			}
+		}
+	}
+}
+
+
+// Shape animations
+@keyframes diamondAnimate {
+  0% {
+    transform: translate(-50%, -42%) rotate(45deg);
+    height: 0rem;
+    width: 0rem;
+  }
+  100% {
+    transform: translate(-50%, -42%) rotate(45deg);
+    height: 8.125rem;
+    width: 8.125rem;
+  }
+}
+
+@keyframes rectangleBottomAnimate {
+  0% {
+	transform: translate(200%, 120%) rotate(0deg);
+	opacity: 0;
+	width: 0;
+  }
+  50% {
+  	opacity: 0;
+  }
+  100% {
+	transform: translate(88%, -12%) rotate(-45deg);
+	opacity: 1;
+
+  }
+}
+
+
+@keyframes rectangleTopAnimate {
+  0% {
+	transform: translate(-400%, -160%) rotate(0deg);
+	opacity: 0;
+	width: 0;
+  }
+  50% {
+  	opacity: 0;
+  }
+  100% {
+	transform: translate(-180%, -84%) rotate(-45deg);
+	opacity: 1;
+  }
+}
+
+@keyframes lineleftAnimate {
+	0% {
+		left:-10%;
+		opacity: 0;
+	  }
+	50% {
+		opacity: 1;
+	}  
+	100% {
+		left:10%;
+	  }
+}
+
+@keyframes linerightAnimate {
+	0% {
+		right: -10%;
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}  
+	100% {
+		right: 10%;
+	}
+}
+
+@keyframes positionDiamondAnimate {
+  0% {
+	transform: translate(-220%, -90%) rotate(45deg);
+    border-color: $cBlush $cBlush #C22D40 #C22D40;
+  }
+
+  16% {
+    border-color: #C22D40 #C22D40 $cBlush $cBlush;
+  }
+
+  33% {
+    border-color: $cBlush $cBlush #C22D40 #C22D40;
+  }
+
+  50% {
+    border-color: #C22D40 #C22D40 $cBlush $cBlush;
+  }
+
+  66% {
+    border-color: $cBlush $cBlush #C22D40 #C22D40;
+  }  
+
+  82% {
+    border-color: #C22D40 #C22D40 $cBlush $cBlush;
+  }
+
+  100% {
+	transform: translate(-220%, -90%) rotate(45deg);
+    border-color: $cBlush $cBlush #C22D40 #C22D40;
+  }
+}
+
+@keyframes bioDiamondAnimate {
+  0% {
+	transform: translate(60%, -50%) rotate(45deg);
+    border-color: #fff #fff #EBEBEB #EBEBEB;
+  }
+
+  16% {
+    border-color: #EBEBEB #EBEBEB #fff #fff;
+  }
+
+  33% {
+    border-color: #fff #fff #EBEBEB #EBEBEB;
+  }
+
+  50% {
+    border-color: #EBEBEB #EBEBEB #fff #fff;
+  }
+
+  66% {
+    border-color: #fff #fff #EBEBEB #EBEBEB;
+  }  
+
+  82% {
+    border-color: #EBEBEB #EBEBEB #fff #fff;
+  }
+
+  100% {
+	transform: translate(60%, -50%) rotate(45deg);
+    border-color: #fff #fff #EBEBEB #EBEBEB;
+  }
+}
+
+
+
+.shape {
+	position: absolute;
+	z-index: 1;
+
+	&--diamond {
+		background-color: $cRiver;
+		height: 8.125rem;
+		width: 8.125rem;
+		top: 50%;
+		left: 50%;
+		animation: 2s ease-in-out 0.5s 1 diamondAnimate;
+		transform: translate(-50%, -42%) rotate(45deg);
+		z-index: 2;
+	}
+
+	&--rectanglebottom {
+		background-color: $cFountain;
+		height: 40rem;
+		width: 8.25rem;
+		top: 50%;
+		left: 50%;
+		animation: 2s ease-in-out 0s 1 rectangleBottomAnimate;
+		transform: translate(88%, -12%) rotate(-45deg);
+		z-index: 1;
+	}
+
+	&--rectangletop {
+		background-color: $cRhino;
+		height: 40rem;
+		width: 8.25rem;
+		top: 50%;
+		left: 50%;
+		animation: 2s ease-in-out 0s 1 rectangleTopAnimate;
+		transform: translate(-180%, -84%) rotate(-45deg);
+		z-index: 1;
+	}
+
+	&--lineleft {
+		display: none;
+		background-color: $cRhino;
+		height: 100rem;
+		width: 1.125rem;
+		top: -80%;
+		left: 10%;
+		animation: 3s ease-out 0s 1 lineleftAnimate;
+		transform: rotate(-45deg);
+
+		@include at-break($break--small) {
+			display: block;
+		}
+	}
+
+	&--lineright {
+		display: none;
+		background-color: $cFountain;
+		height: 100rem;
+		width: 1.125rem;
+		top: -120%;
+		right: 10%;
+		animation: 3s ease-out 0s 1 linerightAnimate;		
+		transform: rotate(-45deg);
+
+		@include at-break($break--small) {
+			display: block;
+		}
+	}
+
+
+	&--position-diamond {
+		border-width: 80px;
+		border-style: solid;
+		animation: 15s ease-in-out 0s infinite positionDiamondAnimate;
+		border-color: $cBlush $cBlush #C22D40 #C22D40;
+		top: 50%;
+		left: 50%;
+		transform: translate(-220%, -90%) rotate(45deg);
+		z-index: 0;
+	}
+
+	&--bio-diamond {
+		border-width: 120px;
+		border-style: solid;
+		animation: 10s ease-in-out 0s infinite bioDiamondAnimate;
+		border-color: $cBlush $cBlush #C22D40 #C22D40;
+		top: 50%;
+		left: 50%;
+		z-index: 0;
+	}
+
+	&--bio-rectangle {
+		background-color: #fff;
+		height: 40rem;
+		width: 5rem;
+		top: 30%;
+		right: 0;
+		transform: translate(88%, -12%) rotate(45deg);
+		z-index: 0;
+	}
+
+	&--position-rectangle {
+		background-color: $cBlush;
+		height: 40rem;
+		width: 7rem;
+		top: 30%;
+		right: 18%;
+		transform: translate(88%, -12%) rotate(45deg);
+		z-index: 0;
+	}	
+}
+
+
+.about {
+	max-width: 120rem;
+	margin: 0 auto;
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+
+		@include at-break($break--medium) {
+			flex-direction: row;
+		}
+	}
+	&__column {
+		padding: 2rem 2rem;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+
+		@include at-break($break--small) {
+			padding: 3.25rem 2rem;
+		}
+
+		@include at-break($break--medium) {
+			padding: 5rem 2rem;
+			width: 50%;
+			min-height: 28rem;
+		}
+		
+		&--position {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $cSalmon;
+			color: #fff;
+
+			.about__position {
+				font-size: 1.875rem;
+				letter-spacing: -0.1rem;
+				max-width: 30rem;
+				line-height: 1.2;
+				z-index: 1;
+
+				@include at-break($break--base) {
+					font-size: 2rem;
+				}
+
+				@include at-break($break--small) {
+					font-size: 2.625rem;
+				}
+			}
+		}
+
+		&--bio {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $cPaper;
+			color: $cRiver;
+
+			.about__bio {
+				font-size: 1.5rem;
+				letter-spacing: -0.1rem;
+				max-width: 30rem;
+				line-height: 1.35;
+				z-index: 1;
+
+				@include at-break($break--small) {
+					font-size: 1.75rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+// work
+
+
+.work {
+	max-width: 120rem;
+	margin: 0 auto;
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		&:first-child {
+			width: 30rem;
+			flex-shrink: 0;
+		}
+
+		&:last-child {
+			flex: 1;
+		}
+		.artwork {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+
+.meta {
+	background-color: $cPaper;
+	padding: 3.125rem;
+
+	&__title {
+		font-size: 1.75rem;
+		letter-spacing: -0.04em;
+	}
+
+	&__role {
+		color: $cSalmon;
+	}
+
+	&__list-item + &__list-item {
+		margin-top: 0.45rem;
+	}
+	&__group + &__group {
+		margin-top: 2.375rem;
+	}
+
+	&__label {
+		width: 4rem;
+		flex-shrink: 0;
+	}
+
+	&__description {
+		font-family: serif;
+		font-size: 1.125rem;
+		font-weight: 100;
+		line-height: 1.4rem;
+
+		& p + p {
+			margin-top: 1rem;
+		}
+	}
+
+	.side-by-side {
+		display: flex;
+
+		& > * + * {
+			margin-left: 1rem;
+		}
+	}
+}
+
+.meta-heading {
+	& > * + * {
+		margin-top: 0.25rem;
+	}
+}
+
+.button {
+	padding: 0.75rem 1rem;
+	background-color: transparent;
+	color: $cRhino;
+	font-weight: bold;
+	font-size: 0.75rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	border: 2px solid $cRhino;
+}
+
+
+.empty {
+	display: none;
+
+	@include at-break($break--medium) {
+		display: block;
+	}
+}
