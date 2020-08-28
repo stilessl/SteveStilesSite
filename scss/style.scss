@@ -668,11 +668,15 @@
 .other-work {
 	background-color: $cPaper;
 	color: #fff;
-	height: 12rem;
+	height: 9rem;
 	z-index: 200;
 	position: relative;
 	background-color: $cRiverDark;
 	position: relative;
+
+	@include at-break($break--small) {
+		height: 12rem;
+	}
 }
 
 .social {
@@ -684,19 +688,42 @@
 	transform: translate(-50%, -50%);
 
 	& > * + * {
-		margin-left: 1.5rem;
+		margin-left: 1rem;
+		@include at-break($break--small) {
+			margin-left: 1.5rem;
+		}
 	}
 	&__label {
-		font-size: 1.5rem;
+		font-size: 1rem;
 		flex-shrink: 0;
+			@include at-break($break--small) {
+				font-size: 1.5rem;
+			}
+
 	}
 	&__list {
 		display: flex;
 
 		& > * + * {
-			margin-left: 1.5rem;
+			margin-left: 0.5rem;
+
+			@include at-break($break--small) {
+				margin-left: 1.5rem;
+			}
 		}
 	}
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	@include at-break($break--small) {
+		svg {
+			width:100%;
+			height:100%;
+		}
+	}
+
 }
 
 .copyright {
