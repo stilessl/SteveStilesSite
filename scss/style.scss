@@ -10,8 +10,8 @@
 	&__list {
 		display: flex;
 	}
+
 	&__list-item {
-		padding: 0.875rem 0.75rem;
 		width: 33.33333%;
 		text-align: center;
 		font-weight: bold;
@@ -23,16 +23,33 @@
 			width: 14.2857%;
 		}
 
+		a {
+			padding: 0.875rem 0.75rem;
+			display: block;
+		}
+
 		&--work a {
 			color: #fff;
+
+			&:hover {
+				color: $cFountain;
+			}
 		}
 
 		&--resume a {
 			color: $cRiver;
+
+			&:hover {
+				background-color: #fff;
+			}
 		}
 		
 		&--contact a {
 			color: #fff;
+
+			&:hover {
+				color: $cRiverDark;
+			}
 		}
 	}
 }
@@ -355,6 +372,13 @@
 }
 
 
+// ABOUT
+// ABOUT
+// ABOUT
+// ABOUT
+// ABOUT
+
+
 .about {
 	max-width: 120rem;
 	margin: 0 auto;
@@ -431,7 +455,11 @@
 
 
 
-// work
+// WORK
+// WORK
+// WORK
+// WORK
+// WORK
 
 
 .work {
@@ -440,16 +468,40 @@
 
 	&__row {
 		display: flex;
+		flex-direction: column;
+
+		@include at-break($break--medium) {
+			display: flex;
+			flex-direction: row;
+		}
+
+	}
+
+	&__row:nth-child(even) {
+		.meta {
+			background-color: #fff;
+		}
 	}
 
 	&__column {
 		&:first-child {
-			width: 30rem;
 			flex-shrink: 0;
+			order: 2;
+
+			@include at-break($break--medium) {
+				order: 1;
+				width: 30rem;
+			}
 		}
 
 		&:last-child {
 			flex: 1;
+			order: 1;
+
+			@include at-break($break--medium) {
+				order: 2;
+			}
+
 		}
 		.artwork {
 			height: 100%;
@@ -520,7 +572,14 @@
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	border: 2px solid $cRhino;
+
+	&:hover {
+		color: #fff;
+		background-color: $cSalmon;
+		border: 2px solid $cSalmon;
+	}
 }
+
 
 
 .empty {

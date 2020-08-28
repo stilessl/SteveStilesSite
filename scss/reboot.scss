@@ -205,6 +205,8 @@ sup { top: -.5em; }
 
 a {
 	color: #000;
+	transition: 0.15s;
+
 	&:hover {
 		color: $cSalmon;
 	}
