@@ -392,10 +392,14 @@
 		}
 	}
 	&__column {
-		padding: 2rem 2rem;
+		padding: 1.5rem 1.5rem;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
+
+		@include at-break($break--base) {
+			padding: 2rem 2rem;	
+		}
 
 		@include at-break($break--small) {
 			padding: 3.25rem 2rem;
@@ -523,7 +527,11 @@
 
 .meta {
 	background-color: $cPaper;
-	padding: 3.125rem;
+	padding: 1.5rem;
+
+	@include at-break($break--base) {
+		padding: 3.125rem;
+	}
 
 	&__title {
 		font-size: 1.75rem;
@@ -538,7 +546,11 @@
 		margin-top: 0.45rem;
 	}
 	&__group + &__group {
-		margin-top: 2.375rem;
+		margin-top: 1.5rem;
+		
+		@include at-break($break--base) {
+			margin-top: 2.375rem;
+		}
 	}
 
 	&__label {
@@ -716,7 +728,7 @@
 	&__list-item {
 		display: flex;
 	}
-	
+
 	svg {
 		width: 20px;
 		height: 20px;
