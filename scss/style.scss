@@ -868,10 +868,6 @@
 	&__column {
 		position: relative;
 
-		.artwork-link {
-			display: block;
-		}
-
 		.artwork-link:before {
 			transition: opacity 0.25s ease;
 			opacity: 0;
