@@ -38,6 +38,39 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/ozy-2.jpg": {
+		"ft": 16384,
+		"iS": 334264,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/ozy-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/ozy-3.jpg": {
+		"ft": 16384,
+		"iS": 192585,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/ozy-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/ozy.jpg": {
+		"ft": 16384,
+		"iS": 266163,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/ozy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/politico-core.jpg": {
 		"ft": 16384,
 		"iS": 205854,
