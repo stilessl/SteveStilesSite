@@ -1,4 +1,6 @@
-
+.content {
+	background-color: #E5E7EB;
+}
 
 .header {
 	position: sticky;
@@ -639,7 +641,7 @@
 
 
 .meta {
-	background-color: $cPaper;
+	background-color: #F4F5F7;
 	padding: 1.5rem;
 
 	@include at-break($break--base) {
