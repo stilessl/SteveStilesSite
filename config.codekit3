@@ -9,6 +9,39 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 9378,
+		"oA": 0,
+		"oAP": "/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 18139,
+		"oA": 0,
+		"oAP": "/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 8456,
+		"oA": 0,
+		"oAP": "/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -26,6 +59,47 @@
 		"oAP": "/css/main-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 538,
+		"oA": 0,
+		"oAP": "/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1119,
+		"oA": 0,
+		"oAP": "/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/favicon.ico",
+		"oF": 0
+		},
+	"/images/favicon.png": {
+		"ft": 32768,
+		"iS": 13293,
+		"oA": 0,
+		"oAP": "/images/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/images/legislative-compass.jpg": {
 		"ft": 16384,
@@ -258,7 +332,7 @@
 	"creationDate": 620144046.66523004,
 	"displayValue": "stevestil.es",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets-azure",
+	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
