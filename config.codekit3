@@ -27,17 +27,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/images/Analysis.jpg": {
-		"ft": 16384,
-		"iS": 145272,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/Analysis.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"/images/legislative-compass.jpg": {
 		"ft": 16384,
 		"iS": 162717,
@@ -58,6 +47,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/images/pro-analysis.jpg": {
+		"ft": 16384,
+		"iS": 145272,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/pro-analysis.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/pro-dashboard.jpg": {
