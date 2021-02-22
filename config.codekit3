@@ -27,6 +27,28 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/images/Analysis.jpg": {
+		"ft": 16384,
+		"iS": 145272,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/Analysis.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/images/legislative-compass.jpg": {
+		"ft": 16384,
+		"iS": 162717,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/legislative-compass.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/politico-core.jpg": {
 		"ft": 16384,
 		"iS": 205854,
@@ -47,6 +69,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/images/pro-design-system.jpg": {
+		"ft": 16384,
+		"iS": 80857,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/pro-design-system.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/pro-playbook.jpg": {
+		"ft": 16384,
+		"iS": 78897,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/pro-playbook.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/images/zendnode.jpg": {
@@ -74,6 +118,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/resume/SteveStiles_Resume_2020.pdf",
+		"oF": 0
+		},
+	"/resume/SteveStiles_Resume_2021.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/resume/SteveStiles_Resume_2021.pdf",
 		"oF": 0
 		},
 	"/scss/main.scss": {

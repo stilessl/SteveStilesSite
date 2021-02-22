@@ -536,8 +536,26 @@
 			align-items: center;
 			background-color: $cPaper;
 			color: $cRiver;
+			flex-direction: column;
+			& > * + * {
+				margin-top: 1rem;
+			}
+
 
 			.about__bio {
+				font-size: 1.5rem;
+				letter-spacing: -0.1rem;
+				max-width: 30rem;
+				line-height: 1.35;
+				z-index: 1;
+
+				@include at-break($break--small) {
+					font-size: 1.75rem;
+				}
+
+			}
+
+			.about__paragraph {
 				font-size: 1.5rem;
 				letter-spacing: -0.1rem;
 				max-width: 30rem;
@@ -654,9 +672,8 @@
 	}
 
 	&__description {
-		font-family: serif;
-		font-size: 1.125rem;
-		font-weight: 100;
+		font-size: 1rem;
+		font-weight: 300;
 		line-height: 1.4rem;
 
 		& p + p {
