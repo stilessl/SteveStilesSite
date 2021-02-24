@@ -877,8 +877,8 @@
 
 .overlay-svg {
 	position: absolute; 
-	left: -999em; 
-	top: -999em;
+	left: 999em; 
+	top: 999em;
 }
 
 
@@ -886,6 +886,7 @@
 
 	&__column {
 		position: relative;
+
 
 		.artwork-link:before {
 			transition: opacity 0.25s ease;
